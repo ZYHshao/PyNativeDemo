@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25087C3924372ADC0021D962 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25087C3824372ADC0021D962 /* AppDelegate.m */; };
+		25087C3C24372ADC0021D962 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25087C3B24372ADC0021D962 /* SceneDelegate.m */; };
+		25087C3F24372ADC0021D962 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25087C3E24372ADC0021D962 /* ViewController.m */; };
+		25087C4224372ADC0021D962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25087C4024372ADC0021D962 /* Main.storyboard */; };
+		25087C4424372ADE0021D962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25087C4324372ADE0021D962 /* Assets.xcassets */; };
+		25087C4724372ADE0021D962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25087C4524372ADE0021D962 /* LaunchScreen.storyboard */; };
+		25087C4A24372ADE0021D962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25087C4924372ADE0021D962 /* main.m */; };
+		25087C59243736040021D962 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C57243736040021D962 /* OpenSSL.framework */; };
+		25087C652437484D0021D962 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C632437484D0021D962 /* libsqlite3.tbd */; };
+		25087C69243748CE0021D962 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C68243748CE0021D962 /* libz.tbd */; };
+		25087C6B243749020021D962 /* liblzma.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C6A243749020021D962 /* liblzma.tbd */; };
+		25087C6D2437493C0021D962 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C6C2437493C0021D962 /* libbz2.tbd */; };
+		25087C7D24388B9A0021D962 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 25087C7C24388B9A0021D962 /* main.py */; };
+		2529B366245A7617007DF561 /* DisplayRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B365245A7617007DF561 /* DisplayRender.m */; };
+		2529B369245A78BC007DF561 /* PythonRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B368245A78BC007DF561 /* PythonRun.m */; };
+		2529B36B245A7C65007DF561 /* label.py in Resources */ = {isa = PBXBuildFile; fileRef = 2529B36A245A7C65007DF561 /* label.py */; };
+		2529B36E245A7F95007DF561 /* BridgeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B36D245A7F95007DF561 /* BridgeColor.m */; };
+		2529B371245A8090007DF561 /* BridgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B370245A8090007DF561 /* BridgeLabel.m */; };
+		2529B374245A80AE007DF561 /* ViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B373245A80AE007DF561 /* ViewMaker.m */; };
+		25F755AC245A6D57009E795E /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 25087C5B243736260021D962 /* Python.framework */; };
+		25F755AE245A6D96009E795E /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F755AD245A6D96009E795E /* Python.framework */; };
+		25F755B4245A70D3009E795E /* BridgeEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F755B3245A70D2009E795E /* BridgeEngine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25087C3424372ADC0021D962 /* PyNativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyNativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25087C3724372ADC0021D962 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25087C3824372ADC0021D962 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25087C3A24372ADC0021D962 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		25087C3B24372ADC0021D962 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		25087C3D24372ADC0021D962 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		25087C3E24372ADC0021D962 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		25087C4124372ADC0021D962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25087C4324372ADE0021D962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25087C4624372ADE0021D962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25087C4824372ADE0021D962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25087C4924372ADE0021D962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25087C57243736040021D962 /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
+		25087C5B243736260021D962 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Python.framework; sourceTree = "<group>"; };
+		25087C622437484D0021D962 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		25087C632437484D0021D962 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		25087C66243748980021D962 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		25087C68243748CE0021D962 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		25087C6A243749020021D962 /* liblzma.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.tbd; path = usr/lib/liblzma.tbd; sourceTree = SDKROOT; };
+		25087C6C2437493C0021D962 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		25087C7C24388B9A0021D962 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		2529B364245A7617007DF561 /* DisplayRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayRender.h; sourceTree = "<group>"; };
+		2529B365245A7617007DF561 /* DisplayRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayRender.m; sourceTree = "<group>"; };
+		2529B367245A78BC007DF561 /* PythonRun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonRun.h; sourceTree = "<group>"; };
+		2529B368245A78BC007DF561 /* PythonRun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PythonRun.m; sourceTree = "<group>"; };
+		2529B36A245A7C65007DF561 /* label.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = label.py; sourceTree = "<group>"; };
+		2529B36C245A7F95007DF561 /* BridgeColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeColor.h; sourceTree = "<group>"; };
+		2529B36D245A7F95007DF561 /* BridgeColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeColor.m; sourceTree = "<group>"; };
+		2529B36F245A8090007DF561 /* BridgeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeLabel.h; sourceTree = "<group>"; };
+		2529B370245A8090007DF561 /* BridgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeLabel.m; sourceTree = "<group>"; };
+		2529B372245A80AE007DF561 /* ViewMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewMaker.h; sourceTree = "<group>"; };
+		2529B373245A80AE007DF561 /* ViewMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewMaker.m; sourceTree = "<group>"; };
+		25F755AD245A6D96009E795E /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Python.framework; sourceTree = "<group>"; };
+		25F755B2245A70D2009E795E /* BridgeEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeEngine.h; sourceTree = "<group>"; };
+		25F755B3245A70D2009E795E /* BridgeEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeEngine.m; sourceTree = "<group>"; };
+		25F755B6245A7117009E795E /* BrdgeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrdgeDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25087C3124372ADC0021D962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25087C6D2437493C0021D962 /* libbz2.tbd in Frameworks */,
+				25087C6B243749020021D962 /* liblzma.tbd in Frameworks */,
+				25087C69243748CE0021D962 /* libz.tbd in Frameworks */,
+				25087C652437484D0021D962 /* libsqlite3.tbd in Frameworks */,
+				25F755AE245A6D96009E795E /* Python.framework in Frameworks */,
+				25087C59243736040021D962 /* OpenSSL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25087C2B24372ADC0021D962 = {
+			isa = PBXGroup;
+			children = (
+				25087C3624372ADC0021D962 /* PyNativeDemo */,
+				25087C3524372ADC0021D962 /* Products */,
+				25087C612437484D0021D962 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		25087C3524372ADC0021D962 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25087C3424372ADC0021D962 /* PyNativeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25087C3624372ADC0021D962 /* PyNativeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				25F755B1245A7081009E795E /* Bridge */,
+				25F755B0245A6EA5009E795E /* lib */,
+				25F755AF245A6E82009E795E /* source */,
+				25087C3724372ADC0021D962 /* AppDelegate.h */,
+				25087C3824372ADC0021D962 /* AppDelegate.m */,
+				25087C3A24372ADC0021D962 /* SceneDelegate.h */,
+				25087C3B24372ADC0021D962 /* SceneDelegate.m */,
+				25087C3D24372ADC0021D962 /* ViewController.h */,
+				25087C3E24372ADC0021D962 /* ViewController.m */,
+				25087C4024372ADC0021D962 /* Main.storyboard */,
+				25087C4324372ADE0021D962 /* Assets.xcassets */,
+				25087C4524372ADE0021D962 /* LaunchScreen.storyboard */,
+				25087C4824372ADE0021D962 /* Info.plist */,
+				25087C4924372ADE0021D962 /* main.m */,
+			);
+			path = PyNativeDemo;
+			sourceTree = "<group>";
+		};
+		25087C56243736040021D962 /* Python-3.5.1-iOS-support.b1 */ = {
+			isa = PBXGroup;
+			children = (
+				25087C5B243736260021D962 /* Python.framework */,
+				25087C57243736040021D962 /* OpenSSL.framework */,
+			);
+			path = "Python-3.5.1-iOS-support.b1";
+			sourceTree = "<group>";
+		};
+		25087C612437484D0021D962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25087C6C2437493C0021D962 /* libbz2.tbd */,
+				25087C6A243749020021D962 /* liblzma.tbd */,
+				25087C68243748CE0021D962 /* libz.tbd */,
+				25087C66243748980021D962 /* SystemConfiguration.framework */,
+				25087C622437484D0021D962 /* libsqlite3.0.tbd */,
+				25087C632437484D0021D962 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25F755AF245A6E82009E795E /* source */ = {
+			isa = PBXGroup;
+			children = (
+				25087C7C24388B9A0021D962 /* main.py */,
+				2529B36A245A7C65007DF561 /* label.py */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		25F755B0245A6EA5009E795E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				25F755AD245A6D96009E795E /* Python.framework */,
+				25087C56243736040021D962 /* Python-3.5.1-iOS-support.b1 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		25F755B1245A7081009E795E /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				25F755B2245A70D2009E795E /* BridgeEngine.h */,
+				25F755B3245A70D2009E795E /* BridgeEngine.m */,
+				2529B364245A7617007DF561 /* DisplayRender.h */,
+				2529B365245A7617007DF561 /* DisplayRender.m */,
+				2529B367245A78BC007DF561 /* PythonRun.h */,
+				2529B368245A78BC007DF561 /* PythonRun.m */,
+				2529B36C245A7F95007DF561 /* BridgeColor.h */,
+				2529B36D245A7F95007DF561 /* BridgeColor.m */,
+				2529B36F245A8090007DF561 /* BridgeLabel.h */,
+				2529B370245A8090007DF561 /* BridgeLabel.m */,
+				2529B372245A80AE007DF561 /* ViewMaker.h */,
+				2529B373245A80AE007DF561 /* ViewMaker.m */,
+				25F755B6245A7117009E795E /* BrdgeDefine.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25087C3324372ADC0021D962 /* PyNativeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25087C4D24372ADE0021D962 /* Build configuration list for PBXNativeTarget "PyNativeDemo" */;
+			buildPhases = (
+				25087C3024372ADC0021D962 /* Sources */,
+				25087C3124372ADC0021D962 /* Frameworks */,
+				25087C3224372ADC0021D962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyNativeDemo;
+			productName = PyNativeDemo;
+			productReference = 25087C3424372ADC0021D962 /* PyNativeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25087C2C24372ADC0021D962 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = jaki;
+				TargetAttributes = {
+					25087C3324372ADC0021D962 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 25087C2F24372ADC0021D962 /* Build configuration list for PBXProject "PyNativeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25087C2B24372ADC0021D962;
+			productRefGroup = 25087C3524372ADC0021D962 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25087C3324372ADC0021D962 /* PyNativeDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25087C3224372ADC0021D962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F755AC245A6D57009E795E /* Python.framework in Resources */,
+				25087C4724372ADE0021D962 /* LaunchScreen.storyboard in Resources */,
+				25087C7D24388B9A0021D962 /* main.py in Resources */,
+				2529B36B245A7C65007DF561 /* label.py in Resources */,
+				25087C4424372ADE0021D962 /* Assets.xcassets in Resources */,
+				25087C4224372ADC0021D962 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25087C3024372ADC0021D962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2529B369245A78BC007DF561 /* PythonRun.m in Sources */,
+				25087C3F24372ADC0021D962 /* ViewController.m in Sources */,
+				2529B371245A8090007DF561 /* BridgeLabel.m in Sources */,
+				25087C3924372ADC0021D962 /* AppDelegate.m in Sources */,
+				2529B366245A7617007DF561 /* DisplayRender.m in Sources */,
+				2529B36E245A7F95007DF561 /* BridgeColor.m in Sources */,
+				25F755B4245A70D3009E795E /* BridgeEngine.m in Sources */,
+				25087C4A24372ADE0021D962 /* main.m in Sources */,
+				25087C3C24372ADC0021D962 /* SceneDelegate.m in Sources */,
+				2529B374245A80AE007DF561 /* ViewMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25087C4024372ADC0021D962 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25087C4124372ADC0021D962 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25087C4524372ADE0021D962 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25087C4624372ADE0021D962 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25087C4B24372ADE0021D962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25087C4C24372ADE0021D962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25087C4E24372ADE0021D962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CKUF38R4M7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PyNativeDemo",
+					"$(PROJECT_DIR)/PyNativeDemo/lib/Python-3.5.1-iOS-support.b1",
+					"$(PROJECT_DIR)/PyNativeDemo/lib",
+				);
+				INFOPLIST_FILE = PyNativeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaki.PyNativeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25087C4F24372ADE0021D962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CKUF38R4M7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PyNativeDemo",
+					"$(PROJECT_DIR)/PyNativeDemo/lib/Python-3.5.1-iOS-support.b1",
+					"$(PROJECT_DIR)/PyNativeDemo/lib",
+				);
+				INFOPLIST_FILE = PyNativeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaki.PyNativeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25087C2F24372ADC0021D962 /* Build configuration list for PBXProject "PyNativeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25087C4B24372ADE0021D962 /* Debug */,
+				25087C4C24372ADE0021D962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25087C4D24372ADE0021D962 /* Build configuration list for PBXNativeTarget "PyNativeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25087C4E24372ADE0021D962 /* Debug */,
+				25087C4F24372ADE0021D962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25087C2C24372ADC0021D962 /* Project object */;
+}
