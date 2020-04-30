@@ -1,3 +1,1 @@
-PyNativeDemo/lib/Python-3.5.1-iOS-support.b1/Python.framework/Versions/3.5/Python
-PyNativeDemo/lib/Python-3.5.1-iOS-support.b1/Python.framework/Versions/3.5/Resources/lib/python35.zip
-PyNativeDemo/lib/Python.framework/Versions/3.5/Python
+Python filter=lfs diff=lfs merge=lfs -text
