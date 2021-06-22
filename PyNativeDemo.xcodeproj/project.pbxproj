@@ -14,7 +14,6 @@
 		25087C4424372ADE0021D962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25087C4324372ADE0021D962 /* Assets.xcassets */; };
 		25087C4724372ADE0021D962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25087C4524372ADE0021D962 /* LaunchScreen.storyboard */; };
 		25087C4A24372ADE0021D962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25087C4924372ADE0021D962 /* main.m */; };
-		25087C59243736040021D962 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C57243736040021D962 /* OpenSSL.framework */; };
 		25087C652437484D0021D962 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C632437484D0021D962 /* libsqlite3.tbd */; };
 		25087C69243748CE0021D962 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C68243748CE0021D962 /* libz.tbd */; };
 		25087C6B243749020021D962 /* liblzma.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C6A243749020021D962 /* liblzma.tbd */; };
@@ -26,8 +25,10 @@
 		2529B36E245A7F95007DF561 /* BridgeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B36D245A7F95007DF561 /* BridgeColor.m */; };
 		2529B371245A8090007DF561 /* BridgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B370245A8090007DF561 /* BridgeLabel.m */; };
 		2529B374245A80AE007DF561 /* ViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B373245A80AE007DF561 /* ViewMaker.m */; };
-		25F755AC245A6D57009E795E /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 25087C5B243736260021D962 /* Python.framework */; };
-		25F755AE245A6D96009E795E /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F755AD245A6D96009E795E /* Python.framework */; };
+		25BFADBD267C6702005A01D6 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFADBB267C6702005A01D6 /* OpenSSL.framework */; };
+		25BFADBE267C6702005A01D6 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFADBC267C6702005A01D6 /* Python.framework */; };
+		25BFADC0267C671C005A01D6 /* OpenSSL.framework in Resources */ = {isa = PBXBuildFile; fileRef = 25BFADBB267C6702005A01D6 /* OpenSSL.framework */; };
+		25BFADC1267C671C005A01D6 /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 25BFADBC267C6702005A01D6 /* Python.framework */; };
 		25F755B4245A70D3009E795E /* BridgeEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F755B3245A70D2009E795E /* BridgeEngine.m */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +45,6 @@
 		25087C4624372ADE0021D962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25087C4824372ADE0021D962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25087C4924372ADE0021D962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		25087C57243736040021D962 /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
-		25087C5B243736260021D962 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Python.framework; sourceTree = "<group>"; };
 		25087C622437484D0021D962 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		25087C632437484D0021D962 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		25087C66243748980021D962 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -64,7 +63,16 @@
 		2529B370245A8090007DF561 /* BridgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeLabel.m; sourceTree = "<group>"; };
 		2529B372245A80AE007DF561 /* ViewMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewMaker.h; sourceTree = "<group>"; };
 		2529B373245A80AE007DF561 /* ViewMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewMaker.m; sourceTree = "<group>"; };
-		25F755AD245A6D96009E795E /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Python.framework; sourceTree = "<group>"; };
+		25BFAD93267C3F9E005A01D6 /* pyconfig-x86_64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pyconfig-x86_64.h"; sourceTree = "<group>"; };
+		25BFAD94267C3F9E005A01D6 /* pyconfig-armv7s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pyconfig-armv7s.h"; sourceTree = "<group>"; };
+		25BFAD95267C3F9E005A01D6 /* pyconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pyconfig.h; sourceTree = "<group>"; };
+		25BFAD96267C3F9E005A01D6 /* pyconfig-arm64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pyconfig-arm64.h"; sourceTree = "<group>"; };
+		25BFAD97267C3F9E005A01D6 /* pyconfig-armv7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pyconfig-armv7.h"; sourceTree = "<group>"; };
+		25BFAD98267C3F9E005A01D6 /* Python.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Python.h; sourceTree = "<group>"; };
+		25BFAD99267C3F9E005A01D6 /* pyconfig-i386.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pyconfig-i386.h"; sourceTree = "<group>"; };
+		25BFAD9B267C3F9E005A01D6 /* python35.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = python35.zip; sourceTree = "<group>"; };
+		25BFADBB267C6702005A01D6 /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
+		25BFADBC267C6702005A01D6 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Python.framework; sourceTree = "<group>"; };
 		25F755B2245A70D2009E795E /* BridgeEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeEngine.h; sourceTree = "<group>"; };
 		25F755B3245A70D2009E795E /* BridgeEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeEngine.m; sourceTree = "<group>"; };
 		25F755B6245A7117009E795E /* BrdgeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrdgeDefine.h; sourceTree = "<group>"; };
@@ -77,10 +85,10 @@
 			files = (
 				25087C6D2437493C0021D962 /* libbz2.tbd in Frameworks */,
 				25087C6B243749020021D962 /* liblzma.tbd in Frameworks */,
+				25BFADBE267C6702005A01D6 /* Python.framework in Frameworks */,
 				25087C69243748CE0021D962 /* libz.tbd in Frameworks */,
 				25087C652437484D0021D962 /* libsqlite3.tbd in Frameworks */,
-				25F755AE245A6D96009E795E /* Python.framework in Frameworks */,
-				25087C59243736040021D962 /* OpenSSL.framework in Frameworks */,
+				25BFADBD267C6702005A01D6 /* OpenSSL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,18 +133,10 @@
 			path = PyNativeDemo;
 			sourceTree = "<group>";
 		};
-		25087C56243736040021D962 /* Python-3.5.1-iOS-support.b1 */ = {
-			isa = PBXGroup;
-			children = (
-				25087C5B243736260021D962 /* Python.framework */,
-				25087C57243736040021D962 /* OpenSSL.framework */,
-			);
-			path = "Python-3.5.1-iOS-support.b1";
-			sourceTree = "<group>";
-		};
 		25087C612437484D0021D962 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25BFAD90267C3F9E005A01D6 /* Resources */,
 				25087C6C2437493C0021D962 /* libbz2.tbd */,
 				25087C6A243749020021D962 /* liblzma.tbd */,
 				25087C68243748CE0021D962 /* libz.tbd */,
@@ -145,6 +145,55 @@
 				25087C632437484D0021D962 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25BFAD90267C3F9E005A01D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25BFAD91267C3F9E005A01D6 /* include */,
+				25BFAD9A267C3F9E005A01D6 /* lib */,
+			);
+			name = Resources;
+			path = PyNativeDemo/lib/Resources;
+			sourceTree = "<group>";
+		};
+		25BFAD91267C3F9E005A01D6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				25BFAD92267C3F9E005A01D6 /* python3.5 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		25BFAD92267C3F9E005A01D6 /* python3.5 */ = {
+			isa = PBXGroup;
+			children = (
+				25BFAD93267C3F9E005A01D6 /* pyconfig-x86_64.h */,
+				25BFAD94267C3F9E005A01D6 /* pyconfig-armv7s.h */,
+				25BFAD95267C3F9E005A01D6 /* pyconfig.h */,
+				25BFAD96267C3F9E005A01D6 /* pyconfig-arm64.h */,
+				25BFAD97267C3F9E005A01D6 /* pyconfig-armv7.h */,
+				25BFAD98267C3F9E005A01D6 /* Python.h */,
+				25BFAD99267C3F9E005A01D6 /* pyconfig-i386.h */,
+			);
+			path = python3.5;
+			sourceTree = "<group>";
+		};
+		25BFAD9A267C3F9E005A01D6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				25BFAD9B267C3F9E005A01D6 /* python35.zip */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		25BFADBA267C6702005A01D6 /* Python-3.4.2-iOS-support.b5 */ = {
+			isa = PBXGroup;
+			children = (
+				25BFADBB267C6702005A01D6 /* OpenSSL.framework */,
+				25BFADBC267C6702005A01D6 /* Python.framework */,
+			);
+			path = "Python-3.4.2-iOS-support.b5";
 			sourceTree = "<group>";
 		};
 		25F755AF245A6E82009E795E /* source */ = {
@@ -159,8 +208,7 @@
 		25F755B0245A6EA5009E795E /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				25F755AD245A6D96009E795E /* Python.framework */,
-				25087C56243736040021D962 /* Python-3.5.1-iOS-support.b1 */,
+				25BFADBA267C6702005A01D6 /* Python-3.4.2-iOS-support.b5 */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -242,7 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F755AC245A6D57009E795E /* Python.framework in Resources */,
+				25BFADC0267C671C005A01D6 /* OpenSSL.framework in Resources */,
+				25BFADC1267C671C005A01D6 /* Python.framework in Resources */,
 				25087C4724372ADE0021D962 /* LaunchScreen.storyboard in Resources */,
 				25087C7D24388B9A0021D962 /* main.py in Resources */,
 				2529B36B245A7C65007DF561 /* label.py in Resources */,
@@ -414,6 +463,7 @@
 					"$(PROJECT_DIR)/PyNativeDemo",
 					"$(PROJECT_DIR)/PyNativeDemo/lib/Python-3.5.1-iOS-support.b1",
 					"$(PROJECT_DIR)/PyNativeDemo/lib",
+					"$(PROJECT_DIR)/PyNativeDemo/lib/Python-3.4.2-iOS-support.b5",
 				);
 				INFOPLIST_FILE = PyNativeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -437,6 +487,7 @@
 					"$(PROJECT_DIR)/PyNativeDemo",
 					"$(PROJECT_DIR)/PyNativeDemo/lib/Python-3.5.1-iOS-support.b1",
 					"$(PROJECT_DIR)/PyNativeDemo/lib",
+					"$(PROJECT_DIR)/PyNativeDemo/lib/Python-3.4.2-iOS-support.b5",
 				);
 				INFOPLIST_FILE = PyNativeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

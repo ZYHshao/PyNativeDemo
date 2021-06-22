@@ -55,7 +55,9 @@ IMPLEMENTATION_INSTANCE
 }
 
 - (wchar_t *)stingTowWchar_t:(NSString*)string {
-    return (wchar_t*)[string cStringUsingEncoding:NSUTF32StringEncoding];
+    const char * frameworkPath = [[NSString stringWithFormat:@"%@/Resources",[self p_pythonFrameworkPath]] UTF8String];
+    wchar_t  *pythonHome = _Py_char2wchar(frameworkPath, NULL);
+    return pythonHome;
 }
 
 - (NSString*)p_pythonFrameworkPath{
