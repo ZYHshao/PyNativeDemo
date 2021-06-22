@@ -1,5 +1,5 @@
 //
-//  BridgeColor.h
+//  FNColorTool.h
 //  PyNativeDemo
 //
 //  Created by 珲少 on 2020/4/30.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BridgeColor : NSObject
+@interface FNColorTool : NSObject
 
 + (UIColor *)colorWith:(NSString *)c;
 

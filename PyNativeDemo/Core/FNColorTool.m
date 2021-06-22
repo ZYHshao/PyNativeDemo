@@ -1,15 +1,15 @@
 //
-//  BridgeColor.m
+//  FNColorTool.m
 //  PyNativeDemo
 //
 //  Created by 珲少 on 2020/4/30.
 //  Copyright © 2020 jaki. All rights reserved.
 //
 
-#import "BridgeColor.h"
+#import "FNColorTool.h"
 
 
-@implementation BridgeColor
+@implementation FNColorTool
 
 + (UIColor *)colorWith:(NSString *)c {
     if ([c isEqualToString:@"red"]) {

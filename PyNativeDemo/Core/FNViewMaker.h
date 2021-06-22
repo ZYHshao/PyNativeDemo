@@ -1,5 +1,5 @@
 //
-//  ViewMaker.h
+//  FNViewMaker.h
 //  PyNativeDemo
 //
 //  Created by 珲少 on 2020/4/30.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewMaker : NSObject
+@interface FNViewMaker : NSObject
 
 + (id)makerView:(NSString *)name;
 

@@ -1,32 +1,33 @@
 //
-//  BridgeEngine.m
+//  FNEngine.m
 //  PyNativeDemo
 //
-//  Created by 珲少 on 2020/4/30.
-//  Copyright © 2020 jaki. All rights reserved.
+//  Created by 珲少 on 2021/6/22.
+//  Copyright © 2021 jaki. All rights reserved.
 //
 
-#import "BridgeEngine.h"
-#import "DisplayRender.h"
-#import "PythonRun.h"
+#import "FNEngine.h"
+#import "FNStaticCommand.h"
+#import "FNPyRun.h"
 
-@interface BridgeEngine ()
+static NSString *Py_Res = @"Resources";
+
+@interface FNEngine ()
 
 @end
 
-@implementation BridgeEngine
+@implementation FNEngine
 
 IMPLEMENTATION_INSTANCE
 
-+ (UIViewController *)setupEngine {
++ (void)setupEngine {
     [SELF_INSTANCE startEngine];
     [SELF_INSTANCE loadLib];
     [SELF_INSTANCE runMain];
-    return [SELF_INSTANCE renderRoot];
 }
 
 - (void)startEngine {
-    NSString* frameworkPath = [NSString stringWithFormat:@"%@/Resources",[SELF_INSTANCE p_pythonFrameworkPath]];
+    NSString* frameworkPath = [NSString stringWithFormat:@"%@/%@",[SELF_INSTANCE p_pythonFrameworkPath], Py_Res];
     wchar_t *pythonHome = [SELF_INSTANCE stingTowWchar_t:frameworkPath];
     Py_SetPythonHome(pythonHome);
     Py_Initialize();
@@ -40,19 +41,20 @@ IMPLEMENTATION_INSTANCE
 }
 
 - (void)loadLib {
-    NSString *path = [NSString stringWithFormat:@"import sys\nsys.path.append(\"%@\")",[[NSBundle mainBundle] resourcePath]];
-    PyRun_SimpleString([path UTF8String]);
+    // 加载系统
+    [[FNPyRun sharedInstance] runSimpleString:kFNCommandLoadPythonSystem];
+    [[FNPyRun sharedInstance] runSimpleString:kFNCommandLoadPythonSystem];
+    // 加载主bundle
+    NSString *path = [NSString stringWithFormat:kFNCommandLoadPythonMudlue_T, [[NSBundle mainBundle] resourcePath]];
+    [[FNPyRun sharedInstance] runSimpleString:path];
     NSLog(@"😄lib加载成功😄");
 }
 
 - (void)runMain {
     PyObject * pModule = PyImport_ImportModule([@"main" UTF8String]);//导入模块
-    [PythonRun sharedInstance].mainItemDic = PyModule_GetDict(pModule);
+    [FNPyRun sharedInstance].mainItemDic = PyModule_GetDict(pModule);
 }
 
-- (UIViewController *)renderRoot {
-    return [[DisplayRender sharedInstance] renderRoot:@"Main"];
-}
 
 - (wchar_t *)stingTowWchar_t:(NSString*)string {
     const char * frameworkPath = [[NSString stringWithFormat:@"%@/Resources",[self p_pythonFrameworkPath]] UTF8String];
@@ -68,5 +70,7 @@ IMPLEMENTATION_INSTANCE
 - (void)dealloc {
     Py_Finalize();
 }
+
+
 
 @end

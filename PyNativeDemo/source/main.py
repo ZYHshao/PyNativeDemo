@@ -1,11 +1,15 @@
-import json
+'''
+生命周期函数：
+render: 返回View对象 渲染页面
+'''
+
 from label import *
+from view import *
 
-class Main():
-    def application_Launch(self):
-        pass
 
-    def render_main_view(self):
+class Main(View):
+    def __init__(self):
+        View.__init__(self)
         l = Label("HelloWorld")
         l.color = "red"
         l.font_size = 21
@@ -14,7 +18,7 @@ class Main():
         l.top = 100
         l.width = 200
         l.height = 30
-        
+
         l2 = Label("hhahha")
         l2.color = "red"
         l2.font_size = 21
@@ -23,7 +27,10 @@ class Main():
         l2.top = 300
         l2.width = 200
         l2.height = 30
-        return json.dumps({
-            "color": "purple",
-            "subViews": [l.render(), l2.render()]
-        })
+
+        self.addSubView(l)
+        self.addSubView(l2)
+        self.background_color = "purple"
+        self.width = 400
+        self.height = 500
+        self.top = 10

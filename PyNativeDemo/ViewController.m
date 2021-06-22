@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "BridgeEngine.h"
+#import "FNEngine.h"
+#import "FNDisplayRender.h"
 
 @interface ViewController ()
 
@@ -19,15 +20,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [FNEngine setupEngine];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:@"启动引擎" forState:UIControlStateNormal];
+    [btn setTitle:@"打开页面" forState:UIControlStateNormal];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(100, 100, 200, 30);
     [btn addTarget:self action:@selector(go) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)go {
-    UIViewController *controller = [BridgeEngine setupEngine];
+    UIViewController *controller = [[FNDisplayRender sharedInstance] renderScene:@"Main"];
     [self presentViewController:controller animated:YES completion:nil];
 }
 

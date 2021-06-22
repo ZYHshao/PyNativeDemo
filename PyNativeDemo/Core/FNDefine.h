@@ -1,13 +1,13 @@
 //
-//  BrdgeDefine.h
+//  FNDefine.h
 //  PyNativeDemo
 //
 //  Created by 珲少 on 2020/4/30.
 //  Copyright © 2020 jaki. All rights reserved.
 //
 
-#ifndef BrdgeDefine_h
-#define BrdgeDefine_h
+#ifndef FNDefine_h
+#define FNDefine_h
 #import <Python/Python.h>
 
 #define INTERFACE_INSTANCE + (instancetype)sharedInstance;
@@ -26,5 +26,4 @@
 
 #define SELF_INSTANCE [self.class sharedInstance]
 
-
-#endif /* BrdgeDefine_h */
+#endif /* FNDefine_h */

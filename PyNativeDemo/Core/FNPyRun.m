@@ -1,21 +1,21 @@
 //
-//  PythonRun.m
+//  FNPyRun.m
 //  PyNativeDemo
 //
-//  Created by 珲少 on 2020/4/30.
-//  Copyright © 2020 jaki. All rights reserved.
+//  Created by 珲少 on 2021/6/22.
+//  Copyright © 2021 jaki. All rights reserved.
 //
 
-#import "PythonRun.h"
+#import "FNPyRun.h"
 
-@implementation PythonRun
+@implementation FNPyRun
 
 IMPLEMENTATION_INSTANCE
 
-- (NSDictionary *)run:(const char *)item method:(const char *)method {
-    PyObject* pClassCalc = PyDict_GetItemString(self.mainItemDic,item);
-    PyObject* pInstanceCalc = PyInstanceMethod_New(pClassCalc);
-    PyObject* pRet = PyObject_CallMethod(pClassCalc, method, "O", pInstanceCalc);
+- (NSDictionary *)run:(NSString *)item method:(NSString *)method {
+    PyObject* pClassCalc = PyDict_GetItemString(self.mainItemDic, [item UTF8String]);
+    PyObject* pInstanceCalc = PyObject_CallFunctionObjArgs(pClassCalc, NULL);
+    PyObject* pRet = PyObject_CallMethod(pClassCalc, [method UTF8String], "O", pInstanceCalc);
     return [self dumpInfo:pRet];
 }
 
@@ -31,17 +31,12 @@ IMPLEMENTATION_INSTANCE
     NSString *jsonString = [NSString stringWithCString:resultCString encoding:NSUTF8StringEncoding];
     NSDictionary *info = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
     NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:info];
-    for (NSString *k in dic.allKeys) {
-        if ([k isEqualToString:@"subViews"]) {
-            NSMutableArray *array = [NSMutableArray array];
-            for (NSUInteger i = 0; i < [dic[k] count]; i++) {
-                  [array addObject:[self dumpString:[dic[k][i] UTF8String]]];
-            }
-            dic[k] = [array copy];
-        }
-    }
     NSLog(@"dumpInfo❄️:%@", dic);
     return [dic copy];
+}
+
+- (void)runSimpleString:(NSString *)string {
+    PyRun_SimpleString([string UTF8String]);
 }
 
 @end

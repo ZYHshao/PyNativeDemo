@@ -6,14 +6,17 @@
 //  Copyright © 2020 jaki. All rights reserved.
 //
 
-#import "ViewMaker.h"
-#import "BridgeLabel.h"
+#import "FNViewMaker.h"
+#import "FNLabel.h"
+#import "FNView.h"
 
-@implementation ViewMaker
+@implementation FNViewMaker
 
 + (id)makerView:(NSString *)name {
     if ([name isEqualToString:@"Label"]) {
-        return [[BridgeLabel alloc] init];
+        return [[FNLabel alloc] init];
+    } else if ([name isEqualToString:@"View"]) {
+        return [[FNView alloc] init];;
     }
     return nil;
 }

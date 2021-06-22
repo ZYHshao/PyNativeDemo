@@ -19,17 +19,20 @@
 		25087C6B243749020021D962 /* liblzma.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C6A243749020021D962 /* liblzma.tbd */; };
 		25087C6D2437493C0021D962 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25087C6C2437493C0021D962 /* libbz2.tbd */; };
 		25087C7D24388B9A0021D962 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 25087C7C24388B9A0021D962 /* main.py */; };
-		2529B366245A7617007DF561 /* DisplayRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B365245A7617007DF561 /* DisplayRender.m */; };
-		2529B369245A78BC007DF561 /* PythonRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B368245A78BC007DF561 /* PythonRun.m */; };
 		2529B36B245A7C65007DF561 /* label.py in Resources */ = {isa = PBXBuildFile; fileRef = 2529B36A245A7C65007DF561 /* label.py */; };
-		2529B36E245A7F95007DF561 /* BridgeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B36D245A7F95007DF561 /* BridgeColor.m */; };
-		2529B371245A8090007DF561 /* BridgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B370245A8090007DF561 /* BridgeLabel.m */; };
-		2529B374245A80AE007DF561 /* ViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B373245A80AE007DF561 /* ViewMaker.m */; };
+		2529B36E245A7F95007DF561 /* FNColorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B36D245A7F95007DF561 /* FNColorTool.m */; };
+		2529B371245A8090007DF561 /* FNLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B370245A8090007DF561 /* FNLabel.m */; };
+		2529B374245A80AE007DF561 /* FNViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529B373245A80AE007DF561 /* FNViewMaker.m */; };
+		25BCDE572681D93500D66A48 /* FNEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BCDE562681D93500D66A48 /* FNEngine.m */; };
+		25BCDE5C2681DADD00D66A48 /* FNStaticCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BCDE5B2681DADD00D66A48 /* FNStaticCommand.m */; };
+		25BCDE642681DDF500D66A48 /* FNPyRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BCDE632681DDF500D66A48 /* FNPyRun.m */; };
+		25BCDE682681DF7B00D66A48 /* FNDisplayRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BCDE672681DF7B00D66A48 /* FNDisplayRender.m */; };
+		25BCDE742681EE5900D66A48 /* view.py in Resources */ = {isa = PBXBuildFile; fileRef = 25BCDE732681EE5900D66A48 /* view.py */; };
+		25BCDE782681FF6B00D66A48 /* FNView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BCDE772681FF6B00D66A48 /* FNView.m */; };
 		25BFADBD267C6702005A01D6 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFADBB267C6702005A01D6 /* OpenSSL.framework */; };
 		25BFADBE267C6702005A01D6 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFADBC267C6702005A01D6 /* Python.framework */; };
 		25BFADC0267C671C005A01D6 /* OpenSSL.framework in Resources */ = {isa = PBXBuildFile; fileRef = 25BFADBB267C6702005A01D6 /* OpenSSL.framework */; };
 		25BFADC1267C671C005A01D6 /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 25BFADBC267C6702005A01D6 /* Python.framework */; };
-		25F755B4245A70D3009E795E /* BridgeEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F755B3245A70D2009E795E /* BridgeEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,17 +55,24 @@
 		25087C6A243749020021D962 /* liblzma.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.tbd; path = usr/lib/liblzma.tbd; sourceTree = SDKROOT; };
 		25087C6C2437493C0021D962 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		25087C7C24388B9A0021D962 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
-		2529B364245A7617007DF561 /* DisplayRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayRender.h; sourceTree = "<group>"; };
-		2529B365245A7617007DF561 /* DisplayRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayRender.m; sourceTree = "<group>"; };
-		2529B367245A78BC007DF561 /* PythonRun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonRun.h; sourceTree = "<group>"; };
-		2529B368245A78BC007DF561 /* PythonRun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PythonRun.m; sourceTree = "<group>"; };
 		2529B36A245A7C65007DF561 /* label.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = label.py; sourceTree = "<group>"; };
-		2529B36C245A7F95007DF561 /* BridgeColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeColor.h; sourceTree = "<group>"; };
-		2529B36D245A7F95007DF561 /* BridgeColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeColor.m; sourceTree = "<group>"; };
-		2529B36F245A8090007DF561 /* BridgeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeLabel.h; sourceTree = "<group>"; };
-		2529B370245A8090007DF561 /* BridgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeLabel.m; sourceTree = "<group>"; };
-		2529B372245A80AE007DF561 /* ViewMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewMaker.h; sourceTree = "<group>"; };
-		2529B373245A80AE007DF561 /* ViewMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewMaker.m; sourceTree = "<group>"; };
+		2529B36C245A7F95007DF561 /* FNColorTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNColorTool.h; sourceTree = "<group>"; };
+		2529B36D245A7F95007DF561 /* FNColorTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNColorTool.m; sourceTree = "<group>"; };
+		2529B36F245A8090007DF561 /* FNLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNLabel.h; sourceTree = "<group>"; };
+		2529B370245A8090007DF561 /* FNLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNLabel.m; sourceTree = "<group>"; };
+		2529B372245A80AE007DF561 /* FNViewMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNViewMaker.h; sourceTree = "<group>"; };
+		2529B373245A80AE007DF561 /* FNViewMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNViewMaker.m; sourceTree = "<group>"; };
+		25BCDE552681D93500D66A48 /* FNEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNEngine.h; sourceTree = "<group>"; };
+		25BCDE562681D93500D66A48 /* FNEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNEngine.m; sourceTree = "<group>"; };
+		25BCDE5A2681DADD00D66A48 /* FNStaticCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNStaticCommand.h; sourceTree = "<group>"; };
+		25BCDE5B2681DADD00D66A48 /* FNStaticCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNStaticCommand.m; sourceTree = "<group>"; };
+		25BCDE622681DDF500D66A48 /* FNPyRun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNPyRun.h; sourceTree = "<group>"; };
+		25BCDE632681DDF500D66A48 /* FNPyRun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNPyRun.m; sourceTree = "<group>"; };
+		25BCDE662681DF7B00D66A48 /* FNDisplayRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNDisplayRender.h; sourceTree = "<group>"; };
+		25BCDE672681DF7B00D66A48 /* FNDisplayRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNDisplayRender.m; sourceTree = "<group>"; };
+		25BCDE732681EE5900D66A48 /* view.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = view.py; sourceTree = "<group>"; };
+		25BCDE762681FF6B00D66A48 /* FNView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNView.h; sourceTree = "<group>"; };
+		25BCDE772681FF6B00D66A48 /* FNView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNView.m; sourceTree = "<group>"; };
 		25BFAD93267C3F9E005A01D6 /* pyconfig-x86_64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pyconfig-x86_64.h"; sourceTree = "<group>"; };
 		25BFAD94267C3F9E005A01D6 /* pyconfig-armv7s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pyconfig-armv7s.h"; sourceTree = "<group>"; };
 		25BFAD95267C3F9E005A01D6 /* pyconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pyconfig.h; sourceTree = "<group>"; };
@@ -73,9 +83,7 @@
 		25BFAD9B267C3F9E005A01D6 /* python35.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = python35.zip; sourceTree = "<group>"; };
 		25BFADBB267C6702005A01D6 /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
 		25BFADBC267C6702005A01D6 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Python.framework; sourceTree = "<group>"; };
-		25F755B2245A70D2009E795E /* BridgeEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeEngine.h; sourceTree = "<group>"; };
-		25F755B3245A70D2009E795E /* BridgeEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeEngine.m; sourceTree = "<group>"; };
-		25F755B6245A7117009E795E /* BrdgeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrdgeDefine.h; sourceTree = "<group>"; };
+		25F755B6245A7117009E795E /* FNDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +123,7 @@
 		25087C3624372ADC0021D962 /* PyNativeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				25F755B1245A7081009E795E /* Bridge */,
+				25BCDE542681D8C300D66A48 /* Core */,
 				25F755B0245A6EA5009E795E /* lib */,
 				25F755AF245A6E82009E795E /* source */,
 				25087C3724372ADC0021D962 /* AppDelegate.h */,
@@ -145,6 +153,30 @@
 				25087C632437484D0021D962 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25BCDE542681D8C300D66A48 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25F755B6245A7117009E795E /* FNDefine.h */,
+				25BCDE5A2681DADD00D66A48 /* FNStaticCommand.h */,
+				25BCDE5B2681DADD00D66A48 /* FNStaticCommand.m */,
+				25BCDE552681D93500D66A48 /* FNEngine.h */,
+				25BCDE562681D93500D66A48 /* FNEngine.m */,
+				25BCDE622681DDF500D66A48 /* FNPyRun.h */,
+				25BCDE632681DDF500D66A48 /* FNPyRun.m */,
+				25BCDE662681DF7B00D66A48 /* FNDisplayRender.h */,
+				25BCDE672681DF7B00D66A48 /* FNDisplayRender.m */,
+				2529B36C245A7F95007DF561 /* FNColorTool.h */,
+				2529B36D245A7F95007DF561 /* FNColorTool.m */,
+				2529B372245A80AE007DF561 /* FNViewMaker.h */,
+				2529B373245A80AE007DF561 /* FNViewMaker.m */,
+				2529B36F245A8090007DF561 /* FNLabel.h */,
+				2529B370245A8090007DF561 /* FNLabel.m */,
+				25BCDE762681FF6B00D66A48 /* FNView.h */,
+				25BCDE772681FF6B00D66A48 /* FNView.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		25BFAD90267C3F9E005A01D6 /* Resources */ = {
@@ -199,6 +231,7 @@
 		25F755AF245A6E82009E795E /* source */ = {
 			isa = PBXGroup;
 			children = (
+				25BCDE732681EE5900D66A48 /* view.py */,
 				25087C7C24388B9A0021D962 /* main.py */,
 				2529B36A245A7C65007DF561 /* label.py */,
 			);
@@ -211,26 +244,6 @@
 				25BFADBA267C6702005A01D6 /* Python-3.4.2-iOS-support.b5 */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		25F755B1245A7081009E795E /* Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				25F755B2245A70D2009E795E /* BridgeEngine.h */,
-				25F755B3245A70D2009E795E /* BridgeEngine.m */,
-				2529B364245A7617007DF561 /* DisplayRender.h */,
-				2529B365245A7617007DF561 /* DisplayRender.m */,
-				2529B367245A78BC007DF561 /* PythonRun.h */,
-				2529B368245A78BC007DF561 /* PythonRun.m */,
-				2529B36C245A7F95007DF561 /* BridgeColor.h */,
-				2529B36D245A7F95007DF561 /* BridgeColor.m */,
-				2529B36F245A8090007DF561 /* BridgeLabel.h */,
-				2529B370245A8090007DF561 /* BridgeLabel.m */,
-				2529B372245A80AE007DF561 /* ViewMaker.h */,
-				2529B373245A80AE007DF561 /* ViewMaker.m */,
-				25F755B6245A7117009E795E /* BrdgeDefine.h */,
-			);
-			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25BFADC0267C671C005A01D6 /* OpenSSL.framework in Resources */,
+				25BCDE742681EE5900D66A48 /* view.py in Resources */,
 				25BFADC1267C671C005A01D6 /* Python.framework in Resources */,
 				25087C4724372ADE0021D962 /* LaunchScreen.storyboard in Resources */,
 				25087C7D24388B9A0021D962 /* main.py in Resources */,
@@ -307,16 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2529B369245A78BC007DF561 /* PythonRun.m in Sources */,
+				25BCDE642681DDF500D66A48 /* FNPyRun.m in Sources */,
+				25BCDE572681D93500D66A48 /* FNEngine.m in Sources */,
+				25BCDE782681FF6B00D66A48 /* FNView.m in Sources */,
+				25BCDE682681DF7B00D66A48 /* FNDisplayRender.m in Sources */,
 				25087C3F24372ADC0021D962 /* ViewController.m in Sources */,
-				2529B371245A8090007DF561 /* BridgeLabel.m in Sources */,
+				2529B371245A8090007DF561 /* FNLabel.m in Sources */,
 				25087C3924372ADC0021D962 /* AppDelegate.m in Sources */,
-				2529B366245A7617007DF561 /* DisplayRender.m in Sources */,
-				2529B36E245A7F95007DF561 /* BridgeColor.m in Sources */,
-				25F755B4245A70D3009E795E /* BridgeEngine.m in Sources */,
+				2529B36E245A7F95007DF561 /* FNColorTool.m in Sources */,
+				25BCDE5C2681DADD00D66A48 /* FNStaticCommand.m in Sources */,
 				25087C4A24372ADE0021D962 /* main.m in Sources */,
 				25087C3C24372ADC0021D962 /* SceneDelegate.m in Sources */,
-				2529B374245A80AE007DF561 /* ViewMaker.m in Sources */,
+				2529B374245A80AE007DF561 /* FNViewMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
