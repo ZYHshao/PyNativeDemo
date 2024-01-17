@@ -1,5 +1,0 @@
-lib/Python-3.4.2-iOS-support.b5/Python.framework/Versions/3.4/Python filter=lfs diff=lfs merge=lfs -text
-lib/Python-3.4.2-iOS-support.b5/OpenSSL.framework/Versions/1.0.2f/OpenSSL filter=lfs diff=lfs merge=lfs -text
-PyNativeDemo/lib/Python-3.4.2-iOS-support.b5/OpenSSL.framework/Versions/1.0.2f/OpenSSL filter=lfs diff=lfs merge=lfs -text
-PyNativeDemo/lib/Python-3.4.2-iOS-support.b5/Python.framework/Versions/3.4/Python filter=lfs diff=lfs merge=lfs -text
-PyNativeDemo/lib/Python-3.4.2-iOS-support.b5/Python.framework/Versions/3.4/Resources/lib/python34.zip filter=lfs diff=lfs merge=lfs -text
